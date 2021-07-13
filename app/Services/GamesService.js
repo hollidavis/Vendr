@@ -2,8 +2,10 @@ import { ProxyState } from '../AppState.js'
 
 class GamesService {
   buySnack(item) {
-    if (ProxyState.total >= ProxyState.snack[item].price)
-      ProxyState.total -= ProxyState.snack[item].price
+    console.log(item)
+    let found = ProxyState.snack.find(s => s.name == item)
+    if (ProxyState.total >= found.price)
+      ProxyState.total -= found.price
   }
 
   insertQuarter() {

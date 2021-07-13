@@ -21,16 +21,23 @@
             </a>
         </nav>
     </header>
-    <main class="container">
+    <main class="container-fluid">
         <div id="app"></div>
-        <h1>Total: <span id="total">0.00</span></h1>
-        <div>
-            <button type="button" class="btn btn-primary" onclick="app.gamesController.insertQuarter()">Add
-                Quarter</button>
-            <button type="button" class="btn btn-primary" onclick="app.gamesController.returnChange()">Return
-                Change</button>
+        <div class="row text-center">
+            <div class="col-12">
+                <h1>Total: <span id="total">0.00</span></h1>
+            </div>
         </div>
-        <div id="snack-buttons"></div>
+        <div class="row text-center">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" onclick="app.gamesController.insertQuarter()">Add
+                    Quarter</button>
+                <button type="button" class="btn btn-primary" onclick="app.gamesController.returnChange()">Return
+                    Change</button>
+            </div>
+        </div>
+        <div class="row mt-4" id="snack-buttons">
+        </div>
     </main>
     <footer class="bg-dark text-light">
         <div class="text-center">
